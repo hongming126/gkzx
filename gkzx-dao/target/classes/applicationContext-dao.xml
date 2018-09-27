@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+						http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+
+    <bean id="dataSource" name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+       <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+       <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/test"/>
+       <property name="user" value="root"/>
+       <property name="password" value="123456"/>
+       <property name="maxPoolSize" value="100"/>
+       <property name="minPoolSize" value="10"/>
+       <property name="initialPoolSize" value="20"/>
+       <property name="maxIdleTime" value="600"/>
+       <property name="acquireIncrement" value="5"/>
+       <property name="maxStatements" value="5"/>
+       <property name="idleConnectionTestPeriod" value="60"/>
+   </bean>
+
+   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+       <property name="dataSource" ref="dataSource"/>
+       <property name="typeAliasesPackage" value="com.education.gkzx.dao.domain"/>
+       <property name="mapperLocations" value="classpath*:mappers/**/*.xml"/>
+   </bean>
+
+   <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+       <constructor-arg index="0" ref="sqlSessionFactory"/>
+   </bean>
+
+   <bean id="jdbTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+       <property name="dataSource" ref="dataSource"/>
+   </bean>
+
+   <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+       <property name="transactionManager" ref="jdbTransactionManager" />
+       <property name="isolationLevelName" value="ISOLATION_DEFAULT"/>
+   </bean>
+
+   <tx:annotation-driven transaction-manager="jdbTransactionManager"/>
+
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+      <property name="basePackage" value="com.education.gkzx.dao.mapper" />
+   </bean>
+
+</beans>

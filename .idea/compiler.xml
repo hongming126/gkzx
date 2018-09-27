@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for jdbtemplate-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="jdbtemplate-biz" />
+        <module name="jdbtemplate-service-api" />
+        <module name="jdbtemplate-service-consumer" />
+        <module name="jdbtemplate-service-provider" />
+        <module name="jdbtemplate-test" />
+        <module name="jdbtemplate-util" />
+        <module name="jdbtemplate-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-biz" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-biz" />
+      </profile>
+      <profile default="false" name="Annotation profile for jdbtemplate-dao" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="jdbtemplate-dao" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-service-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-service-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-dao" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-dao" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-service-consumer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-service-consumer" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-service-provider" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-service-provider" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-test" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-test" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-util" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-util" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for gkzx-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gkzx-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gkzx" target="1.8" />
+      <module name="gkzx-biz" target="1.8" />
+      <module name="gkzx-common" target="1.8" />
+      <module name="gkzx-dao" target="1.8" />
+      <module name="gkzx-service-api" target="1.8" />
+      <module name="gkzx-service-consumer" target="1.8" />
+      <module name="gkzx-service-provider" target="1.8" />
+      <module name="gkzx-test" target="1.8" />
+      <module name="gkzx-util" target="1.8" />
+      <module name="gkzx-web" target="1.8" />
+      <module name="jdbtemplate" target="1.7" />
+      <module name="jdbtemplate-biz" target="1.5" />
+      <module name="jdbtemplate-common" target="1.7" />
+      <module name="jdbtemplate-dao" target="1.7" />
+      <module name="jdbtemplate-service-api" target="1.5" />
+      <module name="jdbtemplate-service-consumer" target="1.5" />
+      <module name="jdbtemplate-service-provider" target="1.5" />
+      <module name="jdbtemplate-test" target="1.5" />
+      <module name="jdbtemplate-util" target="1.5" />
+      <module name="jdbtemplate-web" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

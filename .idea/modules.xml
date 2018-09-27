@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gkzx.iml" filepath="$PROJECT_DIR$/gkzx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-biz/gkzx-biz.iml" filepath="$PROJECT_DIR$/gkzx-biz/gkzx-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-common/gkzx-common.iml" filepath="$PROJECT_DIR$/gkzx-common/gkzx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-dao/gkzx-dao.iml" filepath="$PROJECT_DIR$/gkzx-dao/gkzx-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-service-api/gkzx-service-api.iml" filepath="$PROJECT_DIR$/gkzx-service-api/gkzx-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-service-consumer/gkzx-service-consumer.iml" filepath="$PROJECT_DIR$/gkzx-service-consumer/gkzx-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-service-provider/gkzx-service-provider.iml" filepath="$PROJECT_DIR$/gkzx-service-provider/gkzx-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-test/gkzx-test.iml" filepath="$PROJECT_DIR$/gkzx-test/gkzx-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-util/gkzx-util.iml" filepath="$PROJECT_DIR$/gkzx-util/gkzx-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-web/gkzx-web.iml" filepath="$PROJECT_DIR$/gkzx-web/gkzx-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-dao/src/main/main.iml" filepath="$PROJECT_DIR$/gkzx-dao/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gkzx-test/src/test/test.iml" filepath="$PROJECT_DIR$/gkzx-test/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
